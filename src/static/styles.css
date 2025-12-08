@@ -76,8 +76,8 @@ section h3 {
 
 /* New styles for participants list */
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +98,29 @@ section h3 {
   font-size: 13px;
   box-shadow: 0 1px 2px rgba(10, 30, 80, 0.04);
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #0b3d91;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  color: #c62828;
+  transform: scale(1.1);
+}
 }
 
 /* Fallback single-line "no participants" text */
